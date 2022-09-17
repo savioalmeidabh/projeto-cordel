@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Nunito+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+:root {
+    --fonte1: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    --fonte2: 'Nabla', cursive; 
+    --fonte3: 'Nunito Sans', sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', ;
+    font-size: 1em;
+    }
+
+html, body {    
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}   
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 10vw
+
+}
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-family: cursive;
+    font: 4vw;  
+}
+
+section > p {
+    padding-bottom: 2em;
+    padding-left: 50px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    padding-left: 30px;
+
+}
+
+section.imagem {
+    padding: 10px;
+    background-color: rgb(63, 53, 53);
+    color:white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.26);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagem/background001.jpg);
+    padding-left: 90px;    
+}
+
+section#img02 {
+    background-image: url(../imagem/background002.jpg);
+    padding-left: 90px;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: 10px;
+    padding: 10px;
+}
